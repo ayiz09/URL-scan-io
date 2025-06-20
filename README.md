@@ -1,3 +1,5 @@
+**Script Usage**
+
 usage: url_scan.py [-h] {submit,result,search,screenshot,dom} ...
 
 URLScan.io API Client
