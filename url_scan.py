@@ -25,14 +25,14 @@ class URLScanAPI:
         """
         self.base_url = "https://urlscan.io/api/v1"
         # Hardcoded API key - replace with your actual API key
-        self.api_key = api_key or "REMOVED"
+        self.api_key = api_key or "<Your API Key>"
         self.verify_ssl = verify_ssl
         self.headers = {
             'Content-Type': 'application/json',
             'User-Agent': 'URLScan-Python-Script/1.0'
         }
         
-        if self.api_key and self.api_key != "REMOVED":
+        if self.api_key and self.api_key != "Your API Key":
             self.headers['API-Key'] = self.api_key
 
     def submit_scan(self, url: str, visibility: str = "public", tags: Optional[list] = None) -> Dict[str, Any]:
